@@ -27,6 +27,17 @@
     bottom: 0px;
   }
 }
+@keyframes cambio{
+  0%{
+    margin-top: 1000px;
+  }
+  60%{
+    margin-top: -5px;
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
 /*Cellphone*/
 @media (max-width: 900px){
   #contenido{
@@ -71,6 +82,7 @@
   }
   article figcaption{
     text-align: center;
+    text-decoration: underline;
   }
   article img.jugadores:hover{
     animation-name: jug;
@@ -80,8 +92,33 @@
 
   article img.copas:hover{
     animation-name: copa;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
+  }
+  /*Pie de pagina*/
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+  }
+  footer div{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  footer h1{
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social img{
+    width: 7%;
+    margin-right: 2%;
+  }
+  footer div.derechos img{
+    width: 6%;
+    margin-left: 2%;
   }
 }
 
@@ -122,6 +159,7 @@
   }
   article #fig1{
     width: 35%;
+    margin-left: 10%;
   }
   article #fig2{
     width: 35%;
@@ -130,16 +168,60 @@
     padding-left: 25%;
     padding-right: 25%;
     width: 50%;
+    border: white 2px solid;
+  }
+  article #fig1 img:hover{
+    animation-name: jug;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
   article #fig2 img{
-    padding: 5% 10% 0 10%;
+    padding: 5% 10% 5%; 10%;
     width: 80%;
+    border: white 2px solid;
+  }
+  article #fig2 img:hover{
+    animation-name: copa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
   article figcaption{
     text-align: center;
+    text-decoration: underline;
   }
-  article figcaption{
-    text-align: center;
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  footer h1{
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social img{
+    width: 7%;
+    margin-right: 2%;
+  }
+  footer div.derechos img{
+    width: 6%;
+    margin-left: 2%
+  }
+  footer div.contact{
+    width: 20%;
+    margin-left: 5%;
+  }
+  footer div.terms{
+    width: 20%;
+    margin-left: 5%;
+  }
+  footer div.social{
+    width: 20%;
+    margin-left: 5%;
+  }
+  footer div.derechos{
+    width: 20%;
+    margin-left: 5%;
   }
 }
 /*Informacion General*/
@@ -152,6 +234,8 @@ header{
   background-color: #5b7989;
   padding: 1em;
   border-radius: 10px 10px 0 0;
+  animation-name: cambio;
+  animation-duration: 2s;
 }
 
 header div{

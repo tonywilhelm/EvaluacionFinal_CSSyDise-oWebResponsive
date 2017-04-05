@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Dancing';
+  src: url('../fonts/DancingScript-Regular.otf');
+}
+@keyframes cambio{
+  0%{
+    margin-top: 1000px;
+  }
+  60%{
+    margin-top: -5px;
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
+
+/*Informacion General*/
+
+#contenido{
+  background-color: #02010a;
+  font-family: Dancing;
+}
+
+header{
+  background-color: #5b7989;
+  padding: 1em;
+  border-radius: 10px 10px 0 0;
+  animation-name: cambio;
+  animation-duration: 2s;
+}
+
+header div{
+  color: white;
+  text-shadow: 0 0 5px #02010a;
+}
+
+header a:link, a:visited{
+  color: white;
+}
+
+header div a[href*='copas']{
+  text-decoration: none;
+}
+
+/*Cellphone*/
+
+@media (max-width: 900px){
+  #contenido{
+    width: 98%;
+  }
+  /*Cabecera*/
+  header div{
+    text-align: center;
+    max-width: 190px;
+    min-width: 0;
+    margin: auto;
+    font-size: 1.5em;
+  }
+  header div a{
+    font-size: 0.8em;
+  }
+  header div:link, div:visited{
+    color: white;
+  }
+  /*Imagenes*/
+  section{
+    background-color: #82c3a6;
+    border: solid white 1px;
+  }
+  section img{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  section img.mundial{
+    width: 40%;
+    margin-left: 30%;
+  }
+  section img:nth-child(even){
+    -webkit-filter: grayscale(100%);
+  }
+  section img.liga{
+    -webkit-filter: blur(10px);
+  }
+  section img.copa{
+    -webkit-filter: sepia(90%);
+  }
+  /*Pie de pagina*/
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+  }
+  footer div{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  footer h1{
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social img{
+    width: 7%;
+    margin-right: 2%;
+  }
+  footer div.derechos img{
+    width: 6%;
+    margin-left: 2%;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 900px){
+  #contenido{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  header div{
+      font-size: 1.5em;
+  }
+
+  header a{
+    float: right;
+    text-indent: 2em;
+    font-size: 0.8em;
+  }
+  /*Imagenes*/
+    section{
+      background-color: #82c3a6;
+      border: solid 1px white;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    section div{
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-left: 5%;
+    }
+    section div img{
+      width: 30%;
+      padding-left: 4%;
+    }
+    section img.champions{
+      width: 26%
+    }
+    section img.copa{
+      width: 24%;
+    }
+    section img.mundial{
+      width: 15%;
+      padding-left: 10%;
+    }
+    section img.superespaña{
+      padding-bottom: 7%;
+      padding-left: 7%;
+    }
+    section img.liga{
+      -webkit-filter: blur(10px);
+    }
+    section img:nth-child(even){
+      -webkit-filter: grayscale(100%);
+    }
+    section img.copa{
+      -webkit-filter: sepia(90%);
+    }
+    footer{
+      background-color: #C6d5c5;
+      border-radius: 0 0 10px 10px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    footer h1{
+      margin: 0;
+      padding: 0;
+    }
+    footer div.social img{
+      width: 7%;
+      margin-right: 2%;
+    }
+    footer div.derechos img{
+      width: 6%;
+      margin-left: 2%
+    }
+    footer div.contact{
+      width: 20%;
+      margin-left: 5%;
+    }
+    footer div.terms{
+      width: 20%;
+      margin-left: 5%;
+    }
+    footer div.social{
+      width: 20%;
+      margin-left: 5%;
+    }
+    footer div.derechos{
+      width: 20%;
+      margin-left: 5%;
+    }
+}
